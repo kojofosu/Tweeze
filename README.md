@@ -46,7 +46,7 @@ var twitterUsernameView: TwitterUsernameView = findViewById(R.id.twitter_usernam
 twitterUsernameView.username = "McDerek_" // output @McDerek_
 
 // get username with the @ symbol
-var myUsername = twitterUsernameView.username // output @McDerek
+var myUsername = twitterUsernameView.username // output @McDerek_
 
 // get username without the @ symbol
 var myUsernameWithoutSymbol = twitterUsernameView.usernameWithoutSymbol // output McDerek_
