@@ -1,4 +1,6 @@
 # Tweeze
+![Jitpack](https://img.shields.io/jitpack/v/github/kojofosu/Tweeze?style=for-the-badge&color=2F9319)
+
 Tweeze is an android twitter library
 
 ## Setup
@@ -37,14 +39,20 @@ Declare it in your xml layout
 
 Set username programmatically
 ```kotlin
-    //initialize view
-    var twitterUsernameView: TwitterUsernameView = findViewById(R.id.twitter_username_view) 
+// initialize view
+var twitterUsernameView: TwitterUsernameView = findViewById(R.id.twitter_username_view) 
     
-    //set username
-    twitterUsernameView.username = "McDerek_" //output @McDerek_
+// set username
+twitterUsernameView.username = "McDerek_" // output @McDerek_
 
-    //customize textview
-    twitterUsernameView.textView.setTextColor(Color.GREEN)
+// get username with the @ symbol
+var myUsername = twitterUsernameView.username // output @McDerek
+
+// get username without the @ symbol
+var myUsernameWithoutSymbol = twitterUsernameView.usernameWithoutSymbol // output McDerek_
+
+// customize textview
+twitterUsernameView.textView.setTextColor(Color.GREEN)
 
 ```
 
