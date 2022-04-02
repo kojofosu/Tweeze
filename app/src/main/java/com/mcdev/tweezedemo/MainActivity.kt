@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.mcdev.tweeze.TwitterUsernameView
+import com.mcdev.tweeze.util.VerifiedBadge
 import com.mcdev.tweezedemo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -21,5 +22,11 @@ class MainActivity : AppCompatActivity() {
         binding.tuv.textView.setTextColor(Color.GREEN)
         Log.d(TAG, "onCreate: username is : ${binding.tuv.username}")
         Log.d(TAG, "onCreate: username without at symbol is : ${binding.tuv.usernameWithoutSymbol}")
+
+
+        binding.dnv.setDisplayName("JOJO", true, VerifiedBadge.WHITE)
+        binding.dnv.customizeDisplayName.setTextColor(Color.RED)
+        binding.dnv.textSize = 20
+        Log.d(TAG, "onCreate: display name is : ${binding.dnv.displayName}" )
     }
 }

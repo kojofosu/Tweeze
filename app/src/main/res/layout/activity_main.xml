@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/teal_700">
 
     <com.mcdev.tweeze.TwitterUsernameView
         android:id="@+id/tuv"
@@ -14,5 +15,12 @@
         android:gravity="center"
         android:background="@color/teal_700"
         android:padding="20dp" />
+
+    <com.mcdev.tweeze.TwitterDisplayNameView
+        android:id="@+id/dnv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tuv"/>
 
 </RelativeLayout>
