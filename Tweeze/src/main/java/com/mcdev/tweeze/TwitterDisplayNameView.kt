@@ -69,9 +69,37 @@ class TwitterDisplayNameView @JvmOverloads constructor(
             binding.tweezeDisplayNameVerifiedBadge.visibility = View.GONE
         }
 
-        if (verifiedBadgeType == VerifiedBadge.WHITE) {
-            // set monochrome verified badge
-            binding.tweezeDisplayNameVerifiedBadge.setImageDrawable(ResourcesCompat.getDrawable(resources, R.drawable.ic_twitter_verified_badge_white, context.theme))
+        when (verifiedBadgeType) {
+            VerifiedBadge.WHITE -> {
+                // set white verified badge
+                binding.tweezeDisplayNameVerifiedBadge.setImageDrawable(
+                    ResourcesCompat.getDrawable(
+                        resources,
+                        R.drawable.ic_twitter_verified_badge_white,
+                        context.theme
+                    )
+                )
+            }
+            VerifiedBadge.BLACK -> {
+                // set black verified badge
+                binding.tweezeDisplayNameVerifiedBadge.setImageDrawable(
+                    ResourcesCompat.getDrawable(
+                        resources,
+                        R.drawable.ic_twitter_verified_badge_black,
+                        context.theme
+                    )
+                )
+            }
+            else -> {
+                // set default verified badge
+                binding.tweezeDisplayNameVerifiedBadge.setImageDrawable(
+                    ResourcesCompat.getDrawable(
+                        resources,
+                        R.drawable.ic_twitter_verified_badge,
+                        context.theme
+                    )
+                )
+            }
         }
 
         // set global variable

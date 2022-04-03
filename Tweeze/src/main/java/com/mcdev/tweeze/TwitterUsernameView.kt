@@ -43,7 +43,7 @@ class TwitterUsernameView @JvmOverloads constructor(
 
     /**
      * Get the textview object to customize it*/
-    val textView: TextView
+    val customizeTextView: TextView
         get() = binding.tweezeUsername
 
     init {
