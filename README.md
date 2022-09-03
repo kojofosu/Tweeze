@@ -16,8 +16,6 @@ allprojects {
 }
 ```
 
-
-
 Add the dependency
 
 ```groovy
@@ -25,6 +23,9 @@ dependencies {
    implementation "com.github.kojofosu:Tweeze:$tweeze_version"
 }
 ```
+
+![Tweeze](https://user-images.githubusercontent.com/20203694/161426931-9cb8c2e1-cd14-4fa1-aa47-3ec784d8ff09.png)
+
 
 ## TwitterDisplayNameView
 This view makes it convenient to set twitter display names. It exposes a method that adds the verified badge to users that are verified, just pass the `isVerified` response from the Twitter API.
