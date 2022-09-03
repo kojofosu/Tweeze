@@ -17,6 +17,6 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_twitter_verified_badge"
         android:layout_gravity="start|center"
-        android:paddingStart="2.5dp"
+        android:layout_marginStart="2.5dp"
         android:contentDescription="@string/twitter_verified_badge"/>
 </LinearLayout>
