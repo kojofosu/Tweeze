@@ -64,9 +64,14 @@ class TwitterDisplayNameView @JvmOverloads constructor(
      * @param isVerified
      */
     fun setDisplayName(displayName: String, isVerified: Boolean, verifiedBadgeType: VerifiedBadge = VerifiedBadge.DEFAULT) {
-        if (isVerified.not()) {
-            // make verified badge visible when user is verified
-            binding.tweezeDisplayNameVerifiedBadge.visibility = View.GONE
+        when (isVerified) {
+            true -> {
+                // make verified badge visible when user is verified
+                binding.tweezeDisplayNameVerifiedBadge.visibility = View.VISIBLE
+            }
+            false -> {    // make verified badge invisible when user is not verified
+                binding.tweezeDisplayNameVerifiedBadge.visibility = View.GONE
+            }
         }
 
         when (verifiedBadgeType) {
