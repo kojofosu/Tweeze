@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(root)
 
         binding.tuv.username = "kofi_Moley"
-        binding.tuv.customizeTextView.setTextColor(Color.GREEN)
-        binding.tuv.customizeTextView.textSize = 20f
+        binding.tuv.customizeUserName.setTextColor(Color.GREEN)
+        binding.tuv.customizeUserName.textSize = 20f
         Log.d(TAG, "onCreate: username is : ${binding.tuv.username}")
         Log.d(TAG, "onCreate: username without at symbol is : ${binding.tuv.usernameWithoutSymbol}")
 

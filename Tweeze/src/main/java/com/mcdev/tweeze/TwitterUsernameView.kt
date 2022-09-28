@@ -41,9 +41,15 @@ class TwitterUsernameView @JvmOverloads constructor(
             }
         }
 
+    @Deprecated(message = "This is method is ambitious", replaceWith = ReplaceWith("customizeUserName"))
     /**
      * Get the textview object to customize it*/
     val customizeTextView: TextView
+        get() = binding.tweezeUsername
+
+    /**
+     *  Customize the user's username */
+    val customizeUserName: TextView
         get() = binding.tweezeUsername
 
     init {

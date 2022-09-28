@@ -81,8 +81,8 @@ var myUsername = twitterUsernameView.username // output @McDerek_
 var myUsernameWithoutSymbol = twitterUsernameView.usernameWithoutSymbol // output McDerek_
 
 // customize textview
-twitterUsernameView.customizeTextView.setTextColor(Color.GREEN) // change text color
-twitterUsernameView.customizeTextView.textSize = 20f // set text size
+twitterUsernameView.customizeUserName.setTextColor(Color.GREEN) // change text color
+twitterUsernameView.customizeUserName.textSize = 20f // set text size
 
 ```
 
